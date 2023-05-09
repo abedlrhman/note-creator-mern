@@ -32,9 +32,7 @@ const Note = ({ note, className, onDeleteNoteClicked }: NoteProps) => {
       <Card.Body className={styles.cardBody}>
         <Card.Title className={styleUtils.flexCenter}>
           {title}
-          <button onClick={deleteHandler}>
-            <MdDelete className="text-muted ms-auto" />
-          </button>
+          <MdDelete className="text-muted ms-auto" onClick={deleteHandler} />
         </Card.Title>
         <Card.Text className={styles.cardText}>{text}</Card.Text>
       </Card.Body>
